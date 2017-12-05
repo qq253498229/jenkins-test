@@ -1,0 +1,7 @@
+version: "3"
+services:
+  test:
+    build: .
+    image: registry.cn-beijing.aliyuncs.com/wangdali/cloud-eureka
+    ports:
+      - "8080:8080"
