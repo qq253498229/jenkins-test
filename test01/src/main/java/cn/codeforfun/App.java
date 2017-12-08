@@ -23,6 +23,6 @@ public class App {
 
   @GetMapping("/")
   public String index() {
-    return "index";
+    return "index 666";
   }
 }
