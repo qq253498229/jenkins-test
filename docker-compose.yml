@@ -1,7 +1,8 @@
 version: "3"
 services:
-  test:
+  test01:
     build: .
-    image: registry.cn-beijing.aliyuncs.com/wangdali/cloud-eureka
-    ports:
-      - "8080:8080"
+    image: registry.cn-beijing.aliyuncs.com/wangdali/jenkins-test01
+  test02:
+    build: .
+    image: registry.cn-beijing.aliyuncs.com/wangdali/jenkins-test02
