@@ -3,6 +3,12 @@ services:
   test01:
     build: .
     image: registry.cn-beijing.aliyuncs.com/wangdali/jenkins-test01
+    volumes:
+      - "maven:/root/.m2"
   test02:
     build: .
     image: registry.cn-beijing.aliyuncs.com/wangdali/jenkins-test02
+    volumes:
+      - "maven:/root/.m2"
+volumes:
+  maven:
